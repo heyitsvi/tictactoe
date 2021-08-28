@@ -1,0 +1,54 @@
+html * {
+    font-family: 'Cascadia Mono';
+}
+h1 {
+    font-size: 60px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border:solid;
+    border-color: white;
+    width: fit-content;
+    margin: auto;
+    white-space: nowrap;
+    border-width: 5px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 4px 4px black;
+}
+
+body{
+    background-color: rgb(84, 247, 247);
+    color: black;
+}
+
+#container{
+    display: grid;
+    height: 80vh;
+    grid-template-rows: 1fr 0.2fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+#board {
+    display: grid;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    align-content: center;
+    justify-items: center;
+    font-size: 100px !important;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "one two three"
+                        "four five six"
+                        "seven eight nine"
+    ;
+}       
+
+.grid{
+    background-color: transparent;
+    width: 100%;
+    font-size: 50px;
+}
