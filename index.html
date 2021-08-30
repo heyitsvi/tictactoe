@@ -11,7 +11,17 @@
 <body>
     <h1>Tic Tac Toe</h1>
     <div id="container">
-        <div id="player1" class="button">Player 1</div>
+        <div id="player1" class="input">
+            Player 1
+            <br>
+            <br>
+            <input type=text id="p1-name" class="input">
+            <br>
+            <label for="colorpicker">Color Picker:</label>
+            <input type="color" id="cp1" class="colorBtn" value="#ffffff">
+            <br>
+            <button type="submit" id="p1Btn" onclick="createPlayer()" >Submit</button>
+        </div>
         <div id="board" class="board">
             <button id="one" class="grid"></button>
             <button id="two" class="grid"></button>
@@ -23,7 +33,17 @@
             <button id="eight" class="grid"></button>
             <button id="nine" class="grid"></button>
         </div>
-        <div id="player2" class="button">Player 2</div>
+        <div id="player2" class="input">
+            Player 2
+            <br>
+            <br>
+            <input type=text id="p2-name" class="input">
+            <br>
+            <label for="colorpicker">Color Picker:</label>
+            <input type="color" id="cp2" class="colorBtn" value="#000000">
+            <br>
+            <button type="submit" id="p2Btn">Submit</button>
+        </div>
         <button id="reset" class="button">Reset</button>
     </div>
 </body>

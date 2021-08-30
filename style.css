@@ -9,7 +9,7 @@ h1 {
     border:solid;
     border-color: white;
     width: fit-content;
-    margin: auto;
+    margin:auto;
     white-space: nowrap;
     border-width: 5px;
     border-radius: 10px;
@@ -33,7 +33,10 @@ body{
 
 #board {
     display: grid;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-width: 5px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px grey;
     width: 500px;
     height: 500px;
     align-content: center;
@@ -51,4 +54,33 @@ body{
     background-color: transparent;
     width: 100%;
     font-size: 50px;
+}
+
+#reset{
+    grid-area: 4 / 2;
+}
+
+#p1-name, #p2-name {
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.input{
+    display:grid;
+    justify-items: center;
+}
+
+input[type="color"]{
+    width: 75px;
+    height:75px;
+    max-width: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 4px 4px black;
+
+}
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 50px;
 }
