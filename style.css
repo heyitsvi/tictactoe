@@ -57,8 +57,14 @@ body{
 }
 
 #reset{
+    margin-left: 50%;
     grid-area: 4 / 2;
 }
+#startBtn{
+    margin-right: 50%;
+    grid-area:4 / 2;
+}
+
 
 #p1-name, #p2-name {
     width: 200px;
