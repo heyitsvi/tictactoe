@@ -16,6 +16,7 @@
             <br>
             <br>
             <input type=text id="p1-name" class="input">
+            <div id="name1" class="player-names"></div>
             <br>
             <label for="colorpicker">Color Picker:</label>
             <input type="color" id="cp1" class="colorBtn" value="#ffffff">
@@ -24,29 +25,33 @@
             <!-- <button type="submit" id="p1Btn" onclick="createPlayer()" >Submit</button> -->
         </div>
         <div id="board" class="board">
-            <button id="one" class="grid"></button>
-            <button id="two" class="grid"></button>
-            <button id="three" class="grid"></button>
-            <button id="four" class="grid"></button>
-            <button id="five" class="grid"></button>
-            <button id="six" class="grid"></button>
-            <button id="seven" class="grid"></button>
-            <button id="eight" class="grid"></button>
-            <button id="nine" class="grid"></button>
+            <button id="one" class="grid" data-index="0"></button>
+            <button id="two" class="grid" data-index="1"></button>
+            <button id="three" class="grid" data-index="2"></button>
+            <button id="four" class="grid" data-index="3"></button>
+            <button id="five" class="grid" data-index="4"></button>
+            <button id="six" class="grid" data-index="5"></button>
+            <button id="seven" class="grid" data-index="6"></button>
+            <button id="eight" class="grid" data-index="7"></button>
+            <button id="nine" class="grid" data-index="8"></button>
         </div>
         <div id="player2" class="input">
             Player 2
             <br>
             <br>
             <input type=text id="p2-name" class="input">
+            <div id="name2" class="player-names"></div>
             <br>
             <label for="colorpicker">Color Picker:</label>
             <input type="color" id="cp2" class="colorBtn" value="#000000">
             <br>
-            <!-- <button type="submit" id="p2Btn">Submit</button> -->
         </div>
         <button type="submit" id="startBtn" class="button">Start</button>
         <button id="reset" class="button">Reset</button>
+    </div>
+    <div id="model-container">
+        <div id="result"></div>
+        <div id="again"></div>
     </div>
 </body>
 </html>
