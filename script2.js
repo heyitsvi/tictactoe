@@ -18,11 +18,20 @@ let Gameboard = (function(){
             gameboard.length = 0;
             event_num = 0;
             pointerEvents("all");
-
+            while(document.querySelector(".result")){
+                document.querySelector(".result").remove();
+            }
         })
     }
 
     resetBoard();
+
+    function deleteResult(id) {
+        var nodes = document.getElementById(`${id}`).childNodes;
+        for(var i=0; i<nodes.length; i++) {
+            nodes[i].remove();
+        }
+    }
 
     checkGameStatus = () => {
         test = gameboard;
@@ -44,7 +53,7 @@ let Gameboard = (function(){
             }
         }
     }
-    
+
     function removeAllChildNodes(parent) {
         while (parent.firstChild) {
             parent.removeChild(parent.firstChild);
@@ -103,7 +112,6 @@ let Gameboard = (function(){
                             if (checkGameStatus()==true){
                                 displayWinner(input_node,"WINNER");
                                 pointerEvents("none");
-
                             }
                             if (checkGameStatus()!=true && event_num == 8){
                                 displayWinner(input_node,"DRAW");
